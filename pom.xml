@@ -229,14 +229,14 @@
         <dependency>
             <groupId>za.co.mmagon</groupId>
             <artifactId>jwebswing-jquery-ui</artifactId>
-            <version>0.0.0_0</version>
+            <version>${project.version}</version>
             <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>za.co.mmagon</groupId>
             <artifactId>jwebswing-bootstrap</artifactId>
-            <version>0.0.0_0</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
@@ -261,7 +261,19 @@
         </dependency>
 
     </dependencies>
-<distributionManagement>        <snapshotRepository>            <id>snapshots</id>            <name>ArminSoftwareArtifactory-snapshots</name>            <url>https://www.armin.software/artifactory/libs-snapshot-local</url>        </snapshotRepository>        <repository>            <id>central</id>            <name>ArminSoftwareArtifactory-releases</name>            <url>https://www.armin.software/artifactory/libs-release-local</url>        </repository>    </distributionManagement><organization>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>ArminSoftwareArtifactory-snapshots</name>
+            <url>https://www.armin.software/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+        <repository>
+            <id>central</id>
+            <name>ArminSoftwareArtifactory-releases</name>
+            <url>https://www.armin.software/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
+    <organization>
         <name>Armin Software</name>
         <url>http://www.armin.software</url>
     </organization>
