@@ -22,80 +22,81 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.forms.controls.BSInput;
 /**
  * An implementation of
  * <p>
- * @author Marc Magon
+ *
  * @param <J>
  *
- * @since 17 Jan 2017
+ * @author Marc Magon
  * @version 1.0
+ * @since 17 Jan 2017
  */
 public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
-        extends BSInput
+		extends BSInput
 {
-
-    private static final long serialVersionUID = 1L;
-    /**
-     * The associated feature
-     */
-    private JQueryUIDateTimePickerFeature feature;
-
-    /**
-     * Constructs a new instance
-     */
-    public JQueryUIDateTimePicker()
-    {
-        super(InputTypes.Text);
-        addFeature(getFeature());
-    }
-
-    /**
-     * Returns the feature if any is required
-     *
-     * @return
-     */
-    public final JQueryUIDateTimePickerFeature getFeature()
-    {
-        if (feature == null)
-        {
-            feature = new JQueryUIDateTimePickerFeature(this);
-        }
-        return feature;
-    }
-
-    /**
-     * Returns the options if any is required
-     *
-     * @return
-     */
-    @Override
-    public JQueryUIDateTimePickerOptions getOptions()
-    {
-        return getFeature().getOptions();
-    }
-
-    @Override
-    public boolean equals(Object obj)
-    {
-        if (this == obj)
-        {
-            return true;
-        }
-        if (obj == null)
-        {
-            return false;
-        }
-        if (getClass() != obj.getClass())
-        {
-            return false;
-        }
-        return super.equals(obj);
-    }
-
-    @Override
-    public int hashCode()
-    {
-        int hash = 7;
-        hash = 79 * hash + (this.getID().hashCode());
-        return hash;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	/**
+	 * The associated feature
+	 */
+	private JQueryUIDateTimePickerFeature feature;
+	
+	/**
+	 * Constructs a new instance
+	 */
+	public JQueryUIDateTimePicker()
+	{
+		super(InputTypes.Text);
+		addFeature(getFeature());
+	}
+	
+	/**
+	 * Returns the feature if any is required
+	 *
+	 * @return
+	 */
+	public final JQueryUIDateTimePickerFeature getFeature()
+	{
+		if (feature == null)
+		{
+			feature = new JQueryUIDateTimePickerFeature(this);
+		}
+		return feature;
+	}
+	
+	/**
+	 * Returns the options if any is required
+	 *
+	 * @return
+	 */
+	@Override
+	public JQueryUIDateTimePickerOptions getOptions()
+	{
+		return getFeature().getOptions();
+	}
+	
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+		{
+			return true;
+		}
+		if (obj == null)
+		{
+			return false;
+		}
+		if (getClass() != obj.getClass())
+		{
+			return false;
+		}
+		return super.equals(obj);
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		int hash = 7;
+		hash = 79 * hash + (this.getID().hashCode());
+		return hash;
+	}
 
 }

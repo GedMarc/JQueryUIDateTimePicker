@@ -28,77 +28,77 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  */
 public enum JQueryUIDateTimePickerReferencePool implements ReferencePool
 {
-    UIDateTImePickerReference(new JavascriptReference("JQueryUIDateTimePickerReference",1.0,"datetimepicker-master/build/jquery.datetimepicker.full.min.js"),
-                              new CSSReference("JQueryUIDateTimePickerReference",1.0,"datetimepicker-master/build/jquery.datetimepicker.min.css"));
-    /**
-     * The actual javascript
-     */
-    private JavascriptReference javaScriptReference;
-    /**
-     * The actual css reference
-     */
-    private CSSReference cssReference;
-
-    /**
-     * Constructs a reference pool
-     */
-    private JQueryUIDateTimePickerReferencePool()
-    {
-    }
-
-    /**
-     * Constructs a new reference pool
-     *
-     * @param javaScriptReference
-     * @param cssReference
-     */
-    private JQueryUIDateTimePickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
-    {
-        this.javaScriptReference = javaScriptReference;
-        this.cssReference = cssReference;
-    }
-
-    /**
-     * Returns the javascript reference
-     *
-     * @return
-     */
-    @Override
-    public JavascriptReference getJavaScriptReference()
-    {
-        return javaScriptReference;
-    }
-
-    /**
-     * Sets the javascript reference
-     *
-     * @param javaScriptReference
-     */
-    @Override
-    public void setJavaScriptReference(JavascriptReference javaScriptReference)
-    {
-        this.javaScriptReference = javaScriptReference;
-    }
-
-    /**
-     * Gets the cSS reference
-     *
-     * @return
-     */
-    @Override
-    public CSSReference getCssReference()
-    {
-        return cssReference;
-    }
-
-    /**
-     * Sets the CSS Reference
-     *
-     * @param cssReference
-     */
-    @Override
-    public void setCssReference(CSSReference cssReference)
-    {
-        this.cssReference = cssReference;
-    }
+	UIDateTImePickerReference(new JavascriptReference("JQueryUIDateTimePickerReference", 1.0, "datetimepicker-master/build/jquery.datetimepicker.full.min.js"),
+	                          new CSSReference("JQueryUIDateTimePickerReference", 1.0, "datetimepicker-master/build/jquery.datetimepicker.min.css"));
+	/**
+	 * The actual javascript
+	 */
+	private JavascriptReference javaScriptReference;
+	/**
+	 * The actual css reference
+	 */
+	private CSSReference cssReference;
+	
+	/**
+	 * Constructs a reference pool
+	 */
+	JQueryUIDateTimePickerReferencePool()
+	{
+	}
+	
+	/**
+	 * Constructs a new reference pool
+	 *
+	 * @param javaScriptReference
+	 * @param cssReference
+	 */
+	JQueryUIDateTimePickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	{
+		this.javaScriptReference = javaScriptReference;
+		this.cssReference = cssReference;
+	}
+	
+	/**
+	 * Returns the javascript reference
+	 *
+	 * @return
+	 */
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+	
+	/**
+	 * Sets the javascript reference
+	 *
+	 * @param javaScriptReference
+	 */
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
+	}
+	
+	/**
+	 * Gets the cSS reference
+	 *
+	 * @return
+	 */
+	@Override
+	public CSSReference getCssReference()
+	{
+		return cssReference;
+	}
+	
+	/**
+	 * Sets the CSS Reference
+	 *
+	 * @param cssReference
+	 */
+	@Override
+	public void setCssReference(CSSReference cssReference)
+	{
+		this.cssReference = cssReference;
+	}
 }

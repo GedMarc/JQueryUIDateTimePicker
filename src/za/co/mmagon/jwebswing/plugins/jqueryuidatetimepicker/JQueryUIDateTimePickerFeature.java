@@ -24,74 +24,76 @@ import za.co.mmagon.jwebswing.base.html.interfaces.GlobalFeatures;
  * Adds on a ToolTip, String for custom text using header theme, Div for custom contents
  *
  * @author MMagon
- * @since 2013/01/16
  * @version 1.0
+ * @since 2013/01/16
  */
 public class JQueryUIDateTimePickerFeature extends Feature<JQueryUIDateTimePickerOptions, JQueryUIDateTimePickerFeature> implements JQueryUIDateTimePickerFeatures, GlobalFeatures
 {
-
-    private static final long serialVersionUID = 1L;
-
-    private JQueryUIDateTimePickerOptions options;
-
-    /**
-     * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
-     * <p>
-     * @param forComponent
-     */
-    public JQueryUIDateTimePickerFeature(Component forComponent)
-    {
-        super("JQueryUIDateTimePicker");
-        setComponent(forComponent);
-    }
-
-    /**
-     * Returns all the tooltip options
-     * <p>
-     * @return
-     */
-    @Override
-    public JQueryUIDateTimePickerOptions getOptions()
-    {
-        if (options == null)
-        {
-            options = new JQueryUIDateTimePickerOptions();
-        }
-        return options;
-    }
-
-    @Override
-    public void assignFunctionsToComponent()
-    {
-        String requiredString = getComponent().getJQueryID() + "datetimepicker(";
-        requiredString += getOptions().toString();
-        requiredString += ");" + getNewLine();
-        addQuery(requiredString);
-    }
-
-    @Override
-    public boolean equals(Object obj)
-    {
-        if (this == obj)
-        {
-            return true;
-        }
-        if (obj == null)
-        {
-            return false;
-        }
-        if (getClass() != obj.getClass())
-        {
-            return false;
-        }
-        return super.equals(obj);
-    }
-
-    @Override
-    public int hashCode()
-    {
-        int hash = 7;
-        hash = 79 * hash + (this.getID().hashCode());
-        return hash;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	private JQueryUIDateTimePickerOptions options;
+	
+	/**
+	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
+	 * <p>
+	 *
+	 * @param forComponent
+	 */
+	public JQueryUIDateTimePickerFeature(Component forComponent)
+	{
+		super("JQueryUIDateTimePicker");
+		setComponent(forComponent);
+	}
+	
+	/**
+	 * Returns all the tooltip options
+	 * <p>
+	 *
+	 * @return
+	 */
+	@Override
+	public JQueryUIDateTimePickerOptions getOptions()
+	{
+		if (options == null)
+		{
+			options = new JQueryUIDateTimePickerOptions();
+		}
+		return options;
+	}
+	
+	@Override
+	public void assignFunctionsToComponent()
+	{
+		String requiredString = getComponent().getJQueryID() + "datetimepicker(";
+		requiredString += getOptions().toString();
+		requiredString += ");" + getNewLine();
+		addQuery(requiredString);
+	}
+	
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+		{
+			return true;
+		}
+		if (obj == null)
+		{
+			return false;
+		}
+		if (getClass() != obj.getClass())
+		{
+			return false;
+		}
+		return super.equals(obj);
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		int hash = 7;
+		hash = 79 * hash + (this.getID().hashCode());
+		return hash;
+	}
 }

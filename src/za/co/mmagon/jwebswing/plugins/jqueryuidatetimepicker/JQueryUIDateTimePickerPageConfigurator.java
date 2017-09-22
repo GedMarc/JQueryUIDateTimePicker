@@ -33,7 +33,7 @@ public class JQueryUIDateTimePickerPageConfigurator extends PageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if(!page.isConfigured())
+		if (!page.isConfigured())
 		{
 			page.getBody().addJavaScriptReference(JQueryUIDateTimePickerReferencePool.UIDateTImePickerReference.getJavaScriptReference());
 			page.getBody().addCssReference(JQueryUIDateTimePickerReferencePool.UIDateTImePickerReference.getCssReference());
