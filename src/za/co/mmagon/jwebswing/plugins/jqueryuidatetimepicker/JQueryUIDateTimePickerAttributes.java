@@ -24,26 +24,16 @@ import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 public enum JQueryUIDateTimePickerAttributes implements AttributeDefinitions
 {
 	Visibility;
-	
+
 	private boolean isKeyword;
-	
+
 	/**
 	 * The component attributes
 	 */
 	JQueryUIDateTimePickerAttributes()
 	{
 	}
-	
-	/**
-	 * If the attribute is loaded as a keyword only
-	 *
-	 * @param isKeyword
-	 */
-	JQueryUIDateTimePickerAttributes(boolean isKeyword)
-	{
-		this.isKeyword = isKeyword;
-	}
-	
+
 	/**
 	 * If the attribute is a keyword
 	 *
@@ -54,7 +44,7 @@ public enum JQueryUIDateTimePickerAttributes implements AttributeDefinitions
 	{
 		return isKeyword;
 	}
-	
+
 	/**
 	 * Returns the attribute name replacing all underscores with dashes and all dollar signs to empty
 	 *

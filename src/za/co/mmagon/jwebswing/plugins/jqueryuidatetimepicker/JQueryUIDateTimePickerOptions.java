@@ -30,15 +30,15 @@ import java.util.List;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY, getterVisibility = JsonAutoDetect.Visibility.NONE, setterVisibility = JsonAutoDetect.Visibility.NONE)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * Shows a date picker or not
@@ -75,7 +75,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	 * A mask given for the input field when blank
 	 */
 	private String mask;
-	
+
 	/**
 	 * The minimum time allowed
 	 */
@@ -89,15 +89,15 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	 */
 	@JsonProperty("allowTimes")
 	private List<JQueryUIDateTimePickerTime> allowTimes;
-	
+
 	/**
 	 * The options for the component
 	 */
 	public JQueryUIDateTimePickerOptions()
 	{
-	
+		//Nothing Needed
 	}
-	
+
 	/**
 	 * Shows a date picker or not
 	 *
@@ -107,7 +107,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return datePicker;
 	}
-	
+
 	/**
 	 * Sets a date picker
 	 *
@@ -118,7 +118,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.datePicker = datePicker;
 		return this;
 	}
-	
+
 	/**
 	 * Sets the format of the date picker
 	 *
@@ -128,7 +128,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return format;
 	}
-	
+
 	/**
 	 * Sets the format of the date picker
 	 *
@@ -139,7 +139,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.format = format;
 		return this;
 	}
-	
+
 	/**
 	 * Sets the value in the given format option
 	 *
@@ -149,7 +149,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return value;
 	}
-	
+
 	/**
 	 * Sets the value in the given format option
 	 *
@@ -160,7 +160,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.value = value;
 		return this;
 	}
-	
+
 	/**
 	 * Sets the date picker inline
 	 *
@@ -170,8 +170,8 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return inLine;
 	}
-	
-	
+
+
 	/**
 	 * Sets the date picker inline
 	 *
@@ -184,7 +184,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.inLine = inLine;
 		return this;
 	}
-	
+
 	/**
 	 * Whether or not show weeks
 	 *
@@ -194,7 +194,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return weeks;
 	}
-	
+
 	/**
 	 * Whether or not show weeks
 	 *
@@ -207,7 +207,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.weeks = weeks;
 		return this;
 	}
-	
+
 	/**
 	 * The JQuery theme e.g. dark
 	 *
@@ -217,7 +217,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return theme;
 	}
-	
+
 	/**
 	 * The JQuery theme e.g. dark
 	 *
@@ -230,7 +230,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.theme = theme;
 		return this;
 	}
-	
+
 	/**
 	 * Whether or not to show a time picker
 	 *
@@ -240,7 +240,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return timePicker;
 	}
-	
+
 	/**
 	 * Whether or not to show a time picker
 	 *
@@ -253,7 +253,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.timePicker = timePicker;
 		return this;
 	}
-	
+
 	/**
 	 * A mask given for the input field when blank
 	 *
@@ -263,7 +263,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return mask;
 	}
-	
+
 	/**
 	 * A mask given for the input field when blank
 	 *
@@ -276,7 +276,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.mask = mask;
 		return this;
 	}
-	
+
 	/**
 	 * The minimum time allowed
 	 *
@@ -286,7 +286,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return minTime;
 	}
-	
+
 	/**
 	 * The minimum time allowed
 	 *
@@ -299,7 +299,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.minTime = minTime;
 		return this;
 	}
-	
+
 	/**
 	 * Returns the max time
 	 *
@@ -309,7 +309,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return maxTime;
 	}
-	
+
 	/**
 	 * The max time allowed
 	 *
@@ -322,7 +322,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		this.maxTime = maxTime;
 		return this;
 	}
-	
+
 	/**
 	 * This list of minimum allowed times
 	 *
@@ -336,7 +336,7 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 		}
 		return allowTimes;
 	}
-	
+
 	/**
 	 * This list of minimum allowed times
 	 *
