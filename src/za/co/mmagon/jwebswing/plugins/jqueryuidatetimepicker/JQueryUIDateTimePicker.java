@@ -84,19 +84,13 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 		{
 			return false;
 		}
-		if (getClass() != obj.getClass())
-		{
-			return false;
-		}
-		return super.equals(obj);
+		return getClass() == obj.getClass() && super.equals(obj);
 	}
 	
 	@Override
 	public int hashCode()
 	{
-		int hash = 7;
-		hash = 79 * hash + (this.getID().hashCode());
-		return hash;
+		return super.hashCode();
 	}
 
 }
