@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqueryuidatetimepicker;
 
-import za.co.mmagon.jwebswing.base.html.attributes.InputTypes;
-import za.co.mmagon.jwebswing.plugins.bootstrap.forms.controls.BSInput;
+import com.jwebmp.base.html.attributes.InputTypes;
+import com.jwebmp.plugins.bootstrap.forms.controls.BSInput;
 
 /**
  * An implementation of
@@ -32,13 +32,13 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.forms.controls.BSInput;
 public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 		extends BSInput
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The associated feature
 	 */
 	private JQueryUIDateTimePickerFeature feature;
-	
+
 	/**
 	 * Constructs a new instance
 	 */
@@ -47,7 +47,7 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 		super(InputTypes.Text);
 		addFeature(getFeature());
 	}
-	
+
 	/**
 	 * Returns the feature if any is required
 	 *
@@ -61,7 +61,7 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 		}
 		return feature;
 	}
-	
+
 	/**
 	 * Returns the options if any is required
 	 *
@@ -72,7 +72,13 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 	{
 		return getFeature().getOptions();
 	}
-	
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
+	}
+
 	@Override
 	public boolean equals(Object obj)
 	{
@@ -85,12 +91,6 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 			return false;
 		}
 		return getClass() == obj.getClass() && super.equals(obj);
-	}
-	
-	@Override
-	public int hashCode()
-	{
-		return super.hashCode();
 	}
 
 }
