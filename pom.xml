@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>za.co.mmagon</groupId>
-    <artifactId>jwebswing-jqueryui-datetime-picker</artifactId>
+    <groupId>com.jwebmp</groupId>
+    <artifactId>jwebmp-jqueryui-datetime-picker</artifactId>
     <version>0.0.0_0</version>
     <packaging>jar</packaging>
 
@@ -133,15 +133,15 @@
         </dependency>
 
         <dependency>
-            <groupId>za.co.mmagon</groupId>
-            <artifactId>jwebswing-jquery-ui</artifactId>
+            <groupId>com.jwebmp</groupId>
+            <artifactId>jwebmp-jquery-ui</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
         </dependency>
 
         <dependency>
-            <groupId>za.co.mmagon</groupId>
-            <artifactId>jwebswing-bootstrap</artifactId>
+            <groupId>com.jwebmp</groupId>
+            <artifactId>jwebmp-bootstrap</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -154,13 +154,13 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>jwebswing</artifactId>
+            <artifactId>jwebmp-core</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>jwebswing</artifactId>
+            <artifactId>jwebmp-core</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
             <type>test-jar</type>
