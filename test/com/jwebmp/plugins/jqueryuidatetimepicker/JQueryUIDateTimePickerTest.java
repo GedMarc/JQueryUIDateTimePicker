@@ -17,18 +17,17 @@
 
 package com.jwebmp.plugins.jqueryuidatetimepicker;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
 
 public class JQueryUIDateTimePickerTest
-		extends BaseTestClass
+
 {
 	@Test
 	public void getOptions()
 	{
 		JQueryUIDateTimePicker picker = new JQueryUIDateTimePicker();
-		Page p = getInstance();
+		Page p = new Page();
 		p.getOptions()
 		 .setDynamicRender(true);
 
@@ -39,7 +38,7 @@ public class JQueryUIDateTimePickerTest
 	public void getOptionsTest()
 	{
 		JQueryUIDateTimePicker picker = new JQueryUIDateTimePicker();
-		Page p = getInstance();
+		Page p = new Page();
 
 		picker.getOptions()
 		      .setDatePicker(true);
@@ -65,7 +64,7 @@ public class JQueryUIDateTimePickerTest
 	public void getTagTest()
 	{
 		JQueryUIDateTimePicker picker = new JQueryUIDateTimePicker();
-		Page p = getInstance();
+		Page p = new Page();
 
 		picker.getOptions()
 		      .setDatePicker(true);
