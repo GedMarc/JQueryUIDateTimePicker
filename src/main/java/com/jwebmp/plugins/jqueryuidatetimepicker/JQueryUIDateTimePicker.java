@@ -74,12 +74,6 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 	}
 
 	@Override
-	public int hashCode()
-	{
-		return super.hashCode();
-	}
-
-	@Override
 	public boolean equals(Object obj)
 	{
 		if (this == obj)
@@ -91,6 +85,12 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 			return false;
 		}
 		return getClass() == obj.getClass() && super.equals(obj);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 
 }

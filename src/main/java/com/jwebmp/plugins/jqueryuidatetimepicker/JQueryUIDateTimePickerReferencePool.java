@@ -26,7 +26,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author GedMarc
  * @since 20 Apr 2016
  */
-public enum JQueryUIDateTimePickerReferencePool implements ReferencePool
+public enum JQueryUIDateTimePickerReferencePool
+		implements ReferencePool
 {
 	UIDateTImePickerReference(new JavascriptReference("JQueryUIDateTimePickerReference", 1.0, "datetimepicker-master/build/jquery.datetimepicker.full.min.js"),
 	                          new CSSReference("JQueryUIDateTimePickerReference", 1.0, "datetimepicker-master/build/jquery.datetimepicker.min.css"));

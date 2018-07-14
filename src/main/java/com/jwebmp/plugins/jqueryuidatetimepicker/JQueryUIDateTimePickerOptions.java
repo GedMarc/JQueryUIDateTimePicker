@@ -34,9 +34,12 @@ import java.util.List;
  * 		<p>
  * @since Mar 4, 2015
  */
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY, getterVisibility = JsonAutoDetect.Visibility.NONE, setterVisibility = JsonAutoDetect.Visibility.NONE)
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY,
+		getterVisibility = JsonAutoDetect.Visibility.NONE,
+		setterVisibility = JsonAutoDetect.Visibility.NONE)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class JQueryUIDateTimePickerOptions extends JavaScriptPart
+public class JQueryUIDateTimePickerOptions
+		extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
@@ -170,7 +173,6 @@ public class JQueryUIDateTimePickerOptions extends JavaScriptPart
 	{
 		return inLine;
 	}
-
 
 	/**
 	 * Sets the date picker inline
