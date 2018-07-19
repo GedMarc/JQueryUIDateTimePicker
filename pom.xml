@@ -39,6 +39,7 @@
             <artifactId>jwebmp-jquery-ui</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -46,6 +47,7 @@
             <artifactId>jwebmp-bootstrap</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -57,12 +59,14 @@
             <artifactId>jwebmp-core</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.jwebmp</groupId>
             <artifactId>jwebmp-log-master</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
             <type>jar</type>
         </dependency>
     </dependencies>
