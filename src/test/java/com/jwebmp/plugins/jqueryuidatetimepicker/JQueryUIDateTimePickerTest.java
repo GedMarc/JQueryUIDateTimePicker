@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.jqueryuidatetimepicker;
 
-import com.jwebmp.Page;
+import com.jwebmp.core.Page;
 import org.junit.jupiter.api.Test;
 
 public class JQueryUIDateTimePickerTest

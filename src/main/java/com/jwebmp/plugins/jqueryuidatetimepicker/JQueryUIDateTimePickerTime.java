@@ -18,7 +18,7 @@
 package com.jwebmp.plugins.jqueryuidatetimepicker;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 public class JQueryUIDateTimePickerTime
 		extends JavaScriptPart<JQueryUIDateTimePickerTime>
