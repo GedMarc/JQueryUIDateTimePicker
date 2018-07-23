@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.jqueryuidatetimepicker.JQueryUIDateTimePickerPageConfigurator;
+
 module com.jwebmp.plugins.jqueryuidatetimepicker {
 	exports com.jwebmp.plugins.jqueryuidatetimepicker;
 
@@ -8,4 +11,7 @@ module com.jwebmp.plugins.jqueryuidatetimepicker {
 	requires java.validation;
 	requires java.logging;
 	requires com.jwebmp.plugins.bootstrap;
+
+	provides IPageConfigurator with JQueryUIDateTimePickerPageConfigurator;
+
 }

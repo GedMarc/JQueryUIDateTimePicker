@@ -18,8 +18,8 @@
 package com.jwebmp.plugins.jqueryuidatetimepicker;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 @PluginInformation(pluginName = "JQuery UI Date Time Picker",
 		pluginUniqueName = "jqueryui-datetime-picker",
@@ -37,7 +37,7 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginIconImageUrl = "jqueryuidatetimepicker.png",
 		pluginLastUpdatedDate = "2017/08/28")
 public class JQueryUIDateTimePickerPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
 	/**
 	 * Configures the page for this component
