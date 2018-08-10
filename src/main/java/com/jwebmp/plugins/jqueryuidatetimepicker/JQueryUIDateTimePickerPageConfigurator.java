@@ -21,6 +21,8 @@ import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.services.IPageConfigurator;
 
+import javax.validation.constraints.NotNull;
+
 @PluginInformation(pluginName = "JQuery UI Date Time Picker",
 		pluginUniqueName = "jqueryui-datetime-picker",
 		pluginDescription = "A nice JQuery UI Date Time Picker complete with theme roller capabilities",
@@ -47,6 +49,7 @@ public class JQueryUIDateTimePickerPageConfigurator
 		//Nothing Needed
 	}
 
+	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
