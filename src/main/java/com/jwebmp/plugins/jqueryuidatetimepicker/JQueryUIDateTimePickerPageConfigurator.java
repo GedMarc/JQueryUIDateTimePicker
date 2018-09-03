@@ -42,11 +42,41 @@ public class JQueryUIDateTimePickerPageConfigurator
 		implements IPageConfigurator
 {
 	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
+	/**
 	 * Configures the page for this component
 	 */
 	public JQueryUIDateTimePickerPageConfigurator()
 	{
 		//Nothing Needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return JQueryUIDateTimePickerPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		JQueryUIDateTimePickerPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -61,5 +91,11 @@ public class JQueryUIDateTimePickerPageConfigurator
 			    .addCssReference(JQueryUIDateTimePickerReferencePool.UIDateTImePickerReference.getCssReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return JQueryUIDateTimePickerPageConfigurator.enabled;
 	}
 }
