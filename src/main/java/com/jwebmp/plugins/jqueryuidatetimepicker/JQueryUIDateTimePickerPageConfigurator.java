@@ -39,7 +39,7 @@ import javax.validation.constraints.NotNull;
 		pluginIconImageUrl = "jqueryuidatetimepicker.png",
 		pluginLastUpdatedDate = "2017/08/28")
 public class JQueryUIDateTimePickerPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<JQueryUIDateTimePickerPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
