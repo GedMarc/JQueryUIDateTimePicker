@@ -42,7 +42,7 @@ public class JQueryUIDateTimePickerOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * Shows a date picker or not
 	 */

@@ -31,7 +31,6 @@ public class JQueryUIDateTimePickerFeature
 		extends Feature<GlobalFeatures, JQueryUIDateTimePickerOptions, JQueryUIDateTimePickerFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private JQueryUIDateTimePickerOptions options;
 
