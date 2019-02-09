@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
@@ -31,15 +31,15 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "Date Time Picker, JQuery UI, Drop Down",
 		pluginSubtitle = "Date and Time for JQuery UI",
 		pluginGitUrl = "https://github.com/xdan/datetimepicker.git",
-		pluginSourceUrl = "https://github.com/GedMarc/JQueryUIDateTimePicker",
-		pluginWikiUrl = "https://github.com/GedMarc/JQueryUIDateTimePicker/wiki",
+		pluginSourceUrl = "https://github.com/GedMarc/JQUIDateTimePicker",
+		pluginWikiUrl = "https://github.com/GedMarc/JQUIDateTimePicker/wiki",
 		pluginOriginalHomepage = "https://github.com/xdan/datetimepicker",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQueryUIDateTimePicker.jar/download",
-		pluginIconUrl = "jqueryuidatetimepicker.png",
-		pluginIconImageUrl = "jqueryuidatetimepicker.png",
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQUIDateTimePicker.jar/download",
+		pluginIconUrl = "jquidatetimepicker.png",
+		pluginIconImageUrl = "jquidatetimepicker.png",
 		pluginLastUpdatedDate = "2017/08/28")
-public class JQueryUIDateTimePickerPageConfigurator
-		implements IPageConfigurator<JQueryUIDateTimePickerPageConfigurator>
+public class JQUIDateTimePickerPageConfigurator
+		implements IPageConfigurator<JQUIDateTimePickerPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
@@ -49,7 +49,7 @@ public class JQueryUIDateTimePickerPageConfigurator
 	/**
 	 * Configures the page for this component
 	 */
-	public JQueryUIDateTimePickerPageConfigurator()
+	public JQUIDateTimePickerPageConfigurator()
 	{
 		//Nothing Needed
 	}
@@ -63,7 +63,7 @@ public class JQueryUIDateTimePickerPageConfigurator
 	 */
 	public static boolean isEnabled()
 	{
-		return JQueryUIDateTimePickerPageConfigurator.enabled;
+		return JQUIDateTimePickerPageConfigurator.enabled;
 	}
 
 	/**
@@ -76,19 +76,19 @@ public class JQueryUIDateTimePickerPageConfigurator
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
-		JQueryUIDateTimePickerPageConfigurator.enabled = mustEnable;
+		JQUIDateTimePickerPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			page.getBody()
-			    .addJavaScriptReference(JQueryUIDateTimePickerReferencePool.UIDateTImePickerReference.getJavaScriptReference());
+			    .addJavaScriptReference(JQUIDateTimePickerReferencePool.UIDateTImePickerReference.getJavaScriptReference());
 			page.getBody()
-			    .addCssReference(JQueryUIDateTimePickerReferencePool.UIDateTImePickerReference.getCssReference());
+			    .addCssReference(JQUIDateTimePickerReferencePool.UIDateTImePickerReference.getCssReference());
 		}
 		return page;
 	}
@@ -96,6 +96,6 @@ public class JQueryUIDateTimePickerPageConfigurator
 	@Override
 	public boolean enabled()
 	{
-		return JQueryUIDateTimePickerPageConfigurator.enabled;
+		return JQUIDateTimePickerPageConfigurator.enabled;
 	}
 }

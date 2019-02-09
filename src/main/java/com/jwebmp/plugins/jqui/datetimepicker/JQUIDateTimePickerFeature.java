@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.Component;
 import com.jwebmp.core.Feature;
@@ -27,12 +27,12 @@ import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
  * @version 1.0
  * @since 2013/01/16
  */
-public class JQueryUIDateTimePickerFeature
-		extends Feature<GlobalFeatures, JQueryUIDateTimePickerOptions, JQueryUIDateTimePickerFeature>
+public class JQUIDateTimePickerFeature
+		extends Feature<GlobalFeatures, JQUIDateTimePickerOptions, JQUIDateTimePickerFeature>
 {
 
 
-	private JQueryUIDateTimePickerOptions options;
+	private JQUIDateTimePickerOptions options;
 
 	/**
 	 * Constructs a new Tooltip ComponentFeatureBase for a component. Adds the tooltip text as the Title attribute to the component
@@ -40,9 +40,9 @@ public class JQueryUIDateTimePickerFeature
 	 *
 	 * @param forComponent
 	 */
-	public JQueryUIDateTimePickerFeature(Component forComponent)
+	public JQUIDateTimePickerFeature(Component forComponent)
 	{
-		super("JQueryUIDateTimePicker");
+		super("JQUIDateTimePicker");
 		setComponent(forComponent);
 	}
 
@@ -65,11 +65,11 @@ public class JQueryUIDateTimePickerFeature
 	 * @return
 	 */
 	@Override
-	public JQueryUIDateTimePickerOptions getOptions()
+	public JQUIDateTimePickerOptions getOptions()
 	{
 		if (options == null)
 		{
-			options = new JQueryUIDateTimePickerOptions();
+			options = new JQUIDateTimePickerOptions();
 		}
 		return options;
 	}

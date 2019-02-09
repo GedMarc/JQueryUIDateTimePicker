@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.base.references.JavascriptReference;
@@ -26,7 +26,7 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
  * @author GedMarc
  * @since 20 Apr 2016
  */
-public enum JQueryUIDateTimePickerReferencePool
+public enum JQUIDateTimePickerReferencePool
 		implements ReferencePool
 {
 	UIDateTImePickerReference(new JavascriptReference("JQueryUIDateTimePickerReference", 1.0, "datetimepicker-master/build/jquery.datetimepicker.full.min.js"),
@@ -43,7 +43,7 @@ public enum JQueryUIDateTimePickerReferencePool
 	/**
 	 * Constructs a reference pool
 	 */
-	JQueryUIDateTimePickerReferencePool()
+	JQUIDateTimePickerReferencePool()
 	{
 	}
 
@@ -53,7 +53,7 @@ public enum JQueryUIDateTimePickerReferencePool
 	 * @param javaScriptReference
 	 * @param cssReference
 	 */
-	JQueryUIDateTimePickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	JQUIDateTimePickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		this.cssReference = cssReference;

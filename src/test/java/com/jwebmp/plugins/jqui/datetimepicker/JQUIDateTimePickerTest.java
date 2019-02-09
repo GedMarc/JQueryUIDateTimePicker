@@ -15,18 +15,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.Page;
 import org.junit.jupiter.api.Test;
 
-public class JQueryUIDateTimePickerTest
+public class JQUIDateTimePickerTest
 
 {
 	@Test
 	public void getOptions()
 	{
-		JQueryUIDateTimePicker picker = new JQueryUIDateTimePicker();
+		JQUIDateTimePicker picker = new JQUIDateTimePicker();
 		Page p = new Page();
 		p.getOptions()
 		 .setDynamicRender(true);
@@ -37,7 +37,7 @@ public class JQueryUIDateTimePickerTest
 	@Test
 	public void getOptionsTest()
 	{
-		JQueryUIDateTimePicker picker = new JQueryUIDateTimePicker();
+		JQUIDateTimePicker picker = new JQUIDateTimePicker();
 		Page p = new Page();
 
 		picker.getOptions()
@@ -63,7 +63,7 @@ public class JQueryUIDateTimePickerTest
 	@Test
 	public void getTagTest()
 	{
-		JQueryUIDateTimePicker picker = new JQueryUIDateTimePicker();
+		JQUIDateTimePicker picker = new JQUIDateTimePicker();
 		Page p = new Page();
 
 		picker.getOptions()

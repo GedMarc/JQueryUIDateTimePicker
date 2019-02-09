@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.jqueryuidatetimepicker.implementations;
+package com.jwebmp.plugins.jqui.datetimepicker.implementations;
 
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
@@ -7,9 +7,9 @@ import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
-public class JQueryUIDateTimePickerExclusionsModule
-		implements IGuiceScanModuleExclusions<JQueryUIDateTimePickerExclusionsModule>,
-				           IGuiceScanJarExclusions<JQueryUIDateTimePickerExclusionsModule>
+public class JQUIDateTimePickerExclusionsModule
+		implements IGuiceScanModuleExclusions<JQUIDateTimePickerExclusionsModule>,
+				           IGuiceScanJarExclusions<JQUIDateTimePickerExclusionsModule>
 {
 
 	@Override
@@ -24,7 +24,7 @@ public class JQueryUIDateTimePickerExclusionsModule
 	public @NotNull Set<String> excludeModules()
 	{
 		Set<String> strings = new HashSet<>();
-		strings.add("com.jwebmp.plugins.jqueryuidatetimepicker");
+		strings.add("com.jwebmp.plugins.jquidatetimepicker");
 		return strings;
 	}
 }

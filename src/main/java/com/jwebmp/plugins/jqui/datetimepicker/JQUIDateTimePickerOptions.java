@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -38,7 +38,7 @@ import java.util.List;
 		getterVisibility = JsonAutoDetect.Visibility.NONE,
 		setterVisibility = JsonAutoDetect.Visibility.NONE)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class JQueryUIDateTimePickerOptions
+public class JQUIDateTimePickerOptions
 		extends JavaScriptPart
 {
 
@@ -82,21 +82,21 @@ public class JQueryUIDateTimePickerOptions
 	/**
 	 * The minimum time allowed
 	 */
-	private JQueryUIDateTimePickerTime minTime;
+	private JQUIDateTimePickerTime minTime;
 	/**
 	 * The max time allowed
 	 */
-	private JQueryUIDateTimePickerTime maxTime;
+	private JQUIDateTimePickerTime maxTime;
 	/**
 	 * This list of minimum allowed times
 	 */
 	@JsonProperty("allowTimes")
-	private List<JQueryUIDateTimePickerTime> allowTimes;
+	private List<JQUIDateTimePickerTime> allowTimes;
 
 	/**
 	 * The options for the component
 	 */
-	public JQueryUIDateTimePickerOptions()
+	public JQUIDateTimePickerOptions()
 	{
 		//Nothing Needed
 	}
@@ -116,7 +116,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @param datePicker
 	 */
-	public JQueryUIDateTimePickerOptions setDatePicker(boolean datePicker)
+	public JQUIDateTimePickerOptions setDatePicker(boolean datePicker)
 	{
 		this.datePicker = datePicker;
 		return this;
@@ -137,7 +137,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @param format
 	 */
-	public JQueryUIDateTimePickerOptions setFormat(String format)
+	public JQUIDateTimePickerOptions setFormat(String format)
 	{
 		this.format = format;
 		return this;
@@ -158,7 +158,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @param value
 	 */
-	public JQueryUIDateTimePickerOptions setValue(String value)
+	public JQUIDateTimePickerOptions setValue(String value)
 	{
 		this.value = value;
 		return this;
@@ -181,7 +181,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setInLine(Boolean inLine)
+	public JQUIDateTimePickerOptions setInLine(Boolean inLine)
 	{
 		this.inLine = inLine;
 		return this;
@@ -204,7 +204,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setWeeks(Boolean weeks)
+	public JQUIDateTimePickerOptions setWeeks(Boolean weeks)
 	{
 		this.weeks = weeks;
 		return this;
@@ -227,7 +227,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setTheme(String theme)
+	public JQUIDateTimePickerOptions setTheme(String theme)
 	{
 		this.theme = theme;
 		return this;
@@ -250,7 +250,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setTimePicker(Boolean timePicker)
+	public JQUIDateTimePickerOptions setTimePicker(Boolean timePicker)
 	{
 		this.timePicker = timePicker;
 		return this;
@@ -273,7 +273,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setMask(String mask)
+	public JQUIDateTimePickerOptions setMask(String mask)
 	{
 		this.mask = mask;
 		return this;
@@ -284,7 +284,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerTime getMinTime()
+	public JQUIDateTimePickerTime getMinTime()
 	{
 		return minTime;
 	}
@@ -296,7 +296,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setMinTime(JQueryUIDateTimePickerTime minTime)
+	public JQUIDateTimePickerOptions setMinTime(JQUIDateTimePickerTime minTime)
 	{
 		this.minTime = minTime;
 		return this;
@@ -307,7 +307,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerTime getMaxTime()
+	public JQUIDateTimePickerTime getMaxTime()
 	{
 		return maxTime;
 	}
@@ -319,7 +319,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setMaxTime(JQueryUIDateTimePickerTime maxTime)
+	public JQUIDateTimePickerOptions setMaxTime(JQUIDateTimePickerTime maxTime)
 	{
 		this.maxTime = maxTime;
 		return this;
@@ -330,7 +330,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public List<JQueryUIDateTimePickerTime> getAllowTimes()
+	public List<JQUIDateTimePickerTime> getAllowTimes()
 	{
 		if (allowTimes == null)
 		{
@@ -346,7 +346,7 @@ public class JQueryUIDateTimePickerOptions
 	 *
 	 * @return
 	 */
-	public JQueryUIDateTimePickerOptions setAllowTimes(List<JQueryUIDateTimePickerTime> allowTimes)
+	public JQUIDateTimePickerOptions setAllowTimes(List<JQUIDateTimePickerTime> allowTimes)
 	{
 		this.allowTimes = allowTimes;
 		return this;

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.base.html.attributes.InputTypes;
 import com.jwebmp.plugins.bootstrap.forms.controls.BSInput;
@@ -29,7 +29,7 @@ import com.jwebmp.plugins.bootstrap.forms.controls.BSInput;
  * @version 1.0
  * @since 17 Jan 2017
  */
-public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
+public class JQUIDateTimePicker<J extends JQUIDateTimePicker<J>>
 		extends BSInput
 {
 
@@ -37,12 +37,12 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 	/**
 	 * The associated feature
 	 */
-	private JQueryUIDateTimePickerFeature feature;
+	private JQUIDateTimePickerFeature feature;
 
 	/**
 	 * Constructs a new instance
 	 */
-	public JQueryUIDateTimePicker()
+	public JQUIDateTimePicker()
 	{
 		super(InputTypes.Text);
 		addFeature(getFeature());
@@ -53,11 +53,11 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 	 *
 	 * @return
 	 */
-	public final JQueryUIDateTimePickerFeature getFeature()
+	public final JQUIDateTimePickerFeature getFeature()
 	{
 		if (feature == null)
 		{
-			feature = new JQueryUIDateTimePickerFeature(this);
+			feature = new JQUIDateTimePickerFeature(this);
 		}
 		return feature;
 	}
@@ -68,7 +68,7 @@ public class JQueryUIDateTimePicker<J extends JQueryUIDateTimePicker<J>>
 	 * @return
 	 */
 	@Override
-	public JQueryUIDateTimePickerOptions getOptions()
+	public JQUIDateTimePickerOptions getOptions()
 	{
 		return getFeature().getOptions();
 	}

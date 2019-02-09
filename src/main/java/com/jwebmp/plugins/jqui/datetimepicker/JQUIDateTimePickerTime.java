@@ -15,18 +15,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
-public class JQueryUIDateTimePickerTime
-		extends JavaScriptPart<JQueryUIDateTimePickerTime>
+public class JQUIDateTimePickerTime
+		extends JavaScriptPart<JQUIDateTimePickerTime>
 {
 	private Integer hour;
 	private Integer minute;
 
-	public JQueryUIDateTimePickerTime()
+	public JQUIDateTimePickerTime()
 	{
 		//Nothing Needed
 	}

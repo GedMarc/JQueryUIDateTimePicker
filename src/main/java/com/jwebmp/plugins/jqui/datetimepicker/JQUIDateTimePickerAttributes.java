@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryuidatetimepicker;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.base.html.interfaces.AttributeDefinitions;
 import com.jwebmp.core.utilities.StaticStrings;
@@ -24,7 +24,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 /**
  * @author GedMarc
  */
-public enum JQueryUIDateTimePickerAttributes
+public enum JQUIDateTimePickerAttributes
 		implements AttributeDefinitions
 {
 	Visibility;
@@ -34,7 +34,7 @@ public enum JQueryUIDateTimePickerAttributes
 	/**
 	 * The component attributes
 	 */
-	JQueryUIDateTimePickerAttributes()
+	JQUIDateTimePickerAttributes()
 	{
 	}
 

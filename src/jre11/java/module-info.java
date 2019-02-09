@@ -1,5 +1,8 @@
-module com.jwebmp.plugins.jqueryuidatetimepicker {
-	exports com.jwebmp.plugins.jqueryuidatetimepicker;
+import com.jwebmp.plugins.jqui.datetimepicker.JQUIDateTimePickerPageConfigurator;
+import com.jwebmp.plugins.jqui.datetimepicker.implementations.JQUIDateTimePickerExclusionsModule;
+
+module com.jwebmp.plugins.jqui.datetimepicker {
+	exports com.jwebmp.plugins.jqui.datetimepicker;
 
 	requires com.jwebmp.core;
 	requires com.jwebmp.logmaster;
@@ -10,10 +13,10 @@ module com.jwebmp.plugins.jqueryuidatetimepicker {
 	requires com.jwebmp.plugins.bootstrap;
 	requires com.jwebmp.guicedinjection;
 
-	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.jqueryuidatetimepicker.JQueryUIDateTimePickerPageConfigurator;
+	provides com.jwebmp.core.services.IPageConfigurator with JQUIDateTimePickerPageConfigurator;
 
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.jqueryuidatetimepicker.implementations.JQueryUIDateTimePickerExclusionsModule;
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.jqueryuidatetimepicker.implementations.JQueryUIDateTimePickerExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with JQUIDateTimePickerExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with JQUIDateTimePickerExclusionsModule;
 
-	opens com.jwebmp.plugins.jqueryuidatetimepicker to com.fasterxml.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.jqui.datetimepicker to com.fasterxml.jackson.databind, com.jwebmp.core;
 }

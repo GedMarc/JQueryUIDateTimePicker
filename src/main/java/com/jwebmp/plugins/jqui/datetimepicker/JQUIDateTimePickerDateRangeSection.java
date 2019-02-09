@@ -14,17 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryuidatetimepicker;
 
-import com.jwebmp.core.base.html.interfaces.events.GlobalEvents;
+package com.jwebmp.plugins.jqui.datetimepicker;
 
-/**
- * @author GedMarc
- * @version 1.0
- * @since 07 Aug 2015
- */
-public interface JQueryUIDateTimePickerEvents
-		extends GlobalEvents
+public enum JQUIDateTimePickerDateRangeSection
 {
-
+	NotBefore,
+	NotAfter
 }
