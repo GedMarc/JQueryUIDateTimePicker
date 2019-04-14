@@ -17,7 +17,7 @@
 package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.base.html.attributes.InputTypes;
-import com.jwebmp.plugins.bootstrap.forms.controls.BSInput;
+import com.jwebmp.core.base.html.inputs.InputTextType;
 
 /**
  * An implementation of
@@ -30,7 +30,7 @@ import com.jwebmp.plugins.bootstrap.forms.controls.BSInput;
  * @since 17 Jan 2017
  */
 public class JQUIDateTimePicker<J extends JQUIDateTimePicker<J>>
-		extends BSInput
+		extends InputTextType<J>
 {
 
 
@@ -44,7 +44,6 @@ public class JQUIDateTimePicker<J extends JQUIDateTimePicker<J>>
 	 */
 	public JQUIDateTimePicker()
 	{
-		super(InputTypes.Text);
 		addFeature(getFeature());
 	}
 

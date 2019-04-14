@@ -2,12 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.jwebmp</groupId>
-        <artifactId>jwebmp-builder</artifactId>
+        <groupId>com.jwebmp.plugins.jquery</groupId>
+        <artifactId>jwebmp-plugins-jquery-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
-
-    <artifactId>jwebmp-jqueryui-datetime-picker</artifactId>
+    <artifactId>jwebmp-jqui-datetime-picker</artifactId>
     <packaging>jar</packaging>
 
     <name>JQuery UI Date Time Picker</name>
@@ -21,6 +20,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.jwebmp.core</groupId>
+            <artifactId>jwebmp-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.plugins.jquery</groupId>
+            <artifactId>jwebmp-jquery-ui</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
         </dependency>
@@ -32,23 +41,6 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.jwebmp</groupId>
-            <artifactId>jwebmp-jquery-ui</artifactId>
-            <version>${project.version}</version>
-            <classifier>${jwebmp.runtime.classifier}</classifier>
-            <!--<optional>true</optional>-->
-        </dependency>
-
-        <dependency>
-            <groupId>com.jwebmp</groupId>
-            <artifactId>jwebmp-bootstrap</artifactId>
-            <version>${project.version}</version>
-            <classifier>${jwebmp.runtime.classifier}</classifier>
-            <!--<optional>true</optional>-->
-        </dependency>
-
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>

@@ -10,7 +10,6 @@ module com.jwebmp.plugins.jqui.datetimepicker {
 
 	requires java.validation;
 	requires java.logging;
-	requires com.jwebmp.plugins.bootstrap;
 	requires com.jwebmp.guicedinjection;
 
 	provides com.jwebmp.core.services.IPageConfigurator with JQUIDateTimePickerPageConfigurator;
