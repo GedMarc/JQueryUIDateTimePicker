@@ -11,7 +11,6 @@ module com.jwebmp.plugins.jqui.datetimepicker {
 
 	provides com.jwebmp.core.services.IPageConfigurator with  com.jwebmp.plugins.jqui.datetimepicker.JQUIDateTimePickerPageConfigurator;
 
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with  com.jwebmp.plugins.jqui.datetimepicker.implementations.JQUIDateTimePickerExclusionsModule;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with  com.jwebmp.plugins.jqui.datetimepicker.implementations.JQUIDateTimePickerExclusionsModule;
 
 	opens com.jwebmp.plugins.jqui.datetimepicker to com.fasterxml.jackson.databind, com.jwebmp.core;
