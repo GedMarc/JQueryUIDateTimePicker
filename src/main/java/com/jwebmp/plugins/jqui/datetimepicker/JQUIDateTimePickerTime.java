@@ -55,10 +55,9 @@ public class JQUIDateTimePickerTime
 	@Override
 	public String toString()
 	{
-		return new StringBuilder().append(hour)
-		                          .append(":")
-		                          .append(minute)
-		                          .toString();
+		return hour +
+				":" +
+				minute;
 
 	}
 }

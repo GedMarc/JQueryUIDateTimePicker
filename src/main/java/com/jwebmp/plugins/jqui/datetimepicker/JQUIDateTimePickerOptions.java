@@ -39,7 +39,7 @@ import java.util.List;
 		setterVisibility = JsonAutoDetect.Visibility.NONE)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class JQUIDateTimePickerOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<JQUIDateTimePickerOptions>
 {
 
 

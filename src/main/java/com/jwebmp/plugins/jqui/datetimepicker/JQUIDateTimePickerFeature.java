@@ -77,7 +77,7 @@ public class JQUIDateTimePickerFeature
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		String requiredString = getComponent().getJQueryID() + "datetimepicker(";
+		String requiredString = getComponent().asBase().getJQueryID() + "datetimepicker(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);

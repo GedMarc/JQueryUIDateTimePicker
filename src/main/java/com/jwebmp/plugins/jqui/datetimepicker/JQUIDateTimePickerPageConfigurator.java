@@ -19,6 +19,7 @@ package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -26,7 +27,7 @@ import jakarta.validation.constraints.NotNull;
 @PluginInformation(pluginName = "JQuery UI Date Time Picker",
 		pluginUniqueName = "jqueryui-datetime-picker",
 		pluginDescription = "A nice JQuery UI Date Time Picker complete with theme roller capabilities",
-		pluginVersion = "2.4.7",
+		pluginVersion = "2.5.20",
 		pluginDependancyUniqueIDs = "jquery-ui,jquery",
 		pluginCategories = "Date Time Picker, JQuery UI, Drop Down",
 		pluginSubtitle = "Date and Time for JQuery UI",
@@ -37,7 +38,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQUIDateTimePicker.jar/download",
 		pluginIconUrl = "jquidatetimepicker.png",
 		pluginIconImageUrl = "jquidatetimepicker.png",
-		pluginLastUpdatedDate = "2017/08/28")
+		pluginLastUpdatedDate = "2020/12/16",
+		pluginGroupId = "com.jwebmp.plugins.jquery",
+		pluginArtifactId = "jwebmp-jqui-datetime-picker",
+		pluginStatus = PluginStatus.Released
+
+)
 public class JQUIDateTimePickerPageConfigurator
 		implements IPageConfigurator<JQUIDateTimePickerPageConfigurator>
 {
