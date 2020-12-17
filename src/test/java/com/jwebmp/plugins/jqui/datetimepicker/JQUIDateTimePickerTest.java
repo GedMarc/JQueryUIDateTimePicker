@@ -18,6 +18,7 @@
 package com.jwebmp.plugins.jqui.datetimepicker;
 
 import com.jwebmp.core.Page;
+import com.jwebmp.core.base.html.DivSimple;
 import org.junit.jupiter.api.Test;
 
 public class JQUIDateTimePickerTest
@@ -27,7 +28,7 @@ public class JQUIDateTimePickerTest
 	public void getOptions()
 	{
 		JQUIDateTimePicker picker = new JQUIDateTimePicker();
-		Page p = new Page();
+		Page<?> p = new Page();
 		p.getOptions()
 		 .setDynamicRender(true);
 
@@ -38,7 +39,7 @@ public class JQUIDateTimePickerTest
 	public void getOptionsTest()
 	{
 		JQUIDateTimePicker picker = new JQUIDateTimePicker();
-		Page p = new Page();
+		Page<?> p = new Page();
 
 		picker.getOptions()
 		      .setDatePicker(true);
@@ -54,8 +55,8 @@ public class JQUIDateTimePickerTest
 		      .setWeeks(true);
 		p.getOptions()
 		 .setDynamicRender(false);
-
-		p.add(picker);
+		
+		p.add(new DivSimple<>().add(picker));
 
 		System.out.println(p.toString(0));
 	}
@@ -64,7 +65,7 @@ public class JQUIDateTimePickerTest
 	public void getTagTest()
 	{
 		JQUIDateTimePicker picker = new JQUIDateTimePicker();
-		Page p = new Page();
+		Page<?> p = new Page();
 
 		picker.getOptions()
 		      .setDatePicker(true);
@@ -80,8 +81,8 @@ public class JQUIDateTimePickerTest
 		      .setWeeks(true);
 		p.getOptions()
 		 .setDynamicRender(false);
-
-		p.add(picker);
+		
+		p.add(new DivSimple<>().add(picker));
 
 		System.out.println(picker.toString(0));
 	}
