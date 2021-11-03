@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.jquery</groupId>
     <artifactId>jwebmp-jqui-datetime-picker</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>JQuery UI Date Time Picker</name>
     <description>The JWebSwing implementation for a JQuery UI Date Time Picker</description>
     <url>https://github.com/GedMarc/JQueryUIDateTimePicker</url>
