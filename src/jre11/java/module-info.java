@@ -4,7 +4,7 @@ module com.jwebmp.plugins.jqui.datetimepicker {
 	exports com.jwebmp.plugins.jqui.datetimepicker;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires java.logging;
